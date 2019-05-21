@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Docs.Saas.Model.Auth
@@ -18,5 +19,6 @@ namespace Docs.Saas.Model.Auth
 
         public virtual ICollection<LicenciaUser>    LicenciaUsers { get; set; }
         public virtual ICollection<PrimiumUser>     PrimiumUsers { get; set; }
+   
     }
 }

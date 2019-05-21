@@ -68,6 +68,8 @@ namespace Docs.Saas.Service
             #region Scoped            
             services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddScoped<IUsersService, UsersService>();
+            services.AddScoped<IMenuService, MenuService>();
+            services.AddScoped<IPrimiumService,PrimiumService>();
 
             #endregion
 

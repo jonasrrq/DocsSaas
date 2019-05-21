@@ -18,5 +18,6 @@ namespace Docs.Saas.Model.Domaim
         [Display(Name ="Paquete de Linecncias")]
         public int Keys { get; set; }
         public virtual ApplicationUser User { get; set; }
+
     }
 }

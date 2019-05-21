@@ -1,12 +1,30 @@
 ﻿
+@inject IMenuService UsersService
+
+@{ 
+		var menu = await UsersService.Menu(User.Identity.Name);
+}
 
 
+	<ul class="navbar-nav flex-grow-1">
+		@if (menu.isLogin)
+		{
+			<li class="nav-item">
+				<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+			</li>
+			if (menu.CreateUser != null)
+			{
+				<li class="nav-item">
+					<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@menu.CreateUser</a>
+				</li>
+			}
+			<li class="nav-item">
+				<a class="nav-link text-dark" asp-area="" asp-controller="Primium" asp-action="Index">Primium</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-dark" asp-area="" asp-controller="Primium" asp-action="Mis">Mis Primium</a>
+			</li>
 
-<ul class="navbar-nav flex-grow-1">
-	<li class="nav-item">
-		<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-	</li>
-</ul>
+		}
+
+	</ul>
