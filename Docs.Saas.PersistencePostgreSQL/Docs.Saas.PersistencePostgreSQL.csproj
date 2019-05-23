@@ -5,9 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Docs.Saas.Model\Docs.Saas.Model.csproj" />
-    <ProjectReference Include="..\Docs.Saas.PersistencePostgreSQL\Docs.Saas.PersistencePostgreSQL.csproj" />
-    <ProjectReference Include="..\Docs.Saas.Persistence\Docs.Saas.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docs.Saas.Persistence", "Do
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Docs.Saas.Service", "Docs.Saas.Service\Docs.Saas.Service.csproj", "{F86ACFDA-D34C-46D4-B6AF-6474749BBC70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docs.Saas.PersistencePostgreSQL", "Docs.Saas.PersistencePostgreSQL\Docs.Saas.PersistencePostgreSQL.csproj", "{FE245EFF-6EC2-444F-B259-B16F103FF4B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F86ACFDA-D34C-46D4-B6AF-6474749BBC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86ACFDA-D34C-46D4-B6AF-6474749BBC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86ACFDA-D34C-46D4-B6AF-6474749BBC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE245EFF-6EC2-444F-B259-B16F103FF4B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE245EFF-6EC2-444F-B259-B16F103FF4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE245EFF-6EC2-444F-B259-B16F103FF4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE245EFF-6EC2-444F-B259-B16F103FF4B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

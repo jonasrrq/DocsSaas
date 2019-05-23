@@ -12,10 +12,15 @@ namespace Docs.Saas.Service
     {
         public static void ConfigureStar(ref IServiceCollection services, IConfiguration Configuration)
         {
-            //configuro conexion
-            services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
-                    );
+            //configuro conexion            
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+            //        );
+
+            //Cambio la conexion por la Conexione de PostgreSQL
+            services.AddEntityFrameworkNpgsql().AddDbContext<PersistencePostgreSQL.ApplicationDbContext>(options =>
+                  options.UseNpgsql(Configuration.GetConnectionString("ConnectionPostgreSQL"))
+                  );
 
             //Configuro Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
